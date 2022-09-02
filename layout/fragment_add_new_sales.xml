@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addNewSales">
+
+    <TableLayout
+        android:id="@+id/salesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:stretchColumns="1,2,3,4,5,6">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginBottom="10sp"
+            android:background="#3598BA">
+
+
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_marginLeft="2sp"
+                android:padding="5dp"
+                android:text="Name" />
+
+            <TextView
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:layout_column="3"
+                android:layout_marginLeft="2sp"
+                android:padding="5dp"
+                android:text="Quantity" />
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_column="4"
+                android:layout_marginLeft="2sp"
+                android:padding="5dp"
+                android:text="Unit" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_column="5"
+                android:layout_marginLeft="2sp"
+                android:padding="5dp"
+                android:text="Rate" />
+            <TextView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2sp"
+                android:padding="5dp"
+                android:text="Action" />
+        </TableRow>
+        <ScrollView
+            android:id="@+id/edt_Sales"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <TableLayout
+                android:id="@+id/sales_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1,2,3,4,5,6">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginBottom="2sp">
+
+
+                    <EditText
+                        android:id="@+id/itemsales"
+                        android:layout_width="120dp"
+                        android:layout_marginLeft="2sp"
+                        android:padding="5dp"
+                        android:digits=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+                    <EditText
+                        android:id="@+id/qtysales"
+                        android:layout_width="62dp"
+                        android:layout_marginLeft="2sp"
+                        android:inputType="number"
+                        android:padding="5dp" />
+
+                    <Spinner
+                        android:id="@+id/unit2"
+                        android:layout_width="40dp"
+                        android:layout_marginLeft="2sp"
+                        android:layout_marginTop="10sp"
+                        android:padding="5dp" />
+
+                    <EditText
+                        android:id="@+id/ratesales"
+                        android:layout_width="50sp"
+                        android:layout_marginLeft="2sp"
+                        android:inputType="number"
+                        android:padding="5dp" />
+
+                    <Button
+                        android:id="@+id/donebtn2"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_marginLeft="2sp"
+                        android:padding="5dp"
+                        android:text="Done"
+                        android:textColor="@color/primaryColor" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+    </TableLayout>
+
+
+</FrameLayout>

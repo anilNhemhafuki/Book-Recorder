@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:title="@string/profile"
+            android:icon="@drawable/android_developer"/>
+
+        <item
+            android:id="@+id/rate"
+            android:title="@string/rate_us"
+            android:icon="@drawable/rate_ic"/>
+        <item
+            android:id="@+id/feedback"
+            android:title="@string/feedback"
+            android:icon="@drawable/feedback_ic"/>
+    </group>
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:title="@string/share"
+                android:icon="@drawable/share"/>
+
+        </menu>
+    </item>
+
+
+</menu>
